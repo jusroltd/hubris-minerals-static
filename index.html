@@ -22,7 +22,7 @@
     <meta property="og:description" content="Leading gold mining operations in the DRC with ethical practices and sustainable development. Discover our comprehensive mining services and premium gold products.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.hubrisminerals.com/">
-    <meta property="og:image" content="https://www.hubrisminerals.com/assets/images/hubris-minerals-hero.jpg">
+    <meta property="og:image" content="https://jusroltd.github.io/hubris-minerals-static/assets/images/hubris-minerals-hero.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Hubris Minerals">
@@ -32,7 +32,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hubris Minerals | Premier Gold Mining Company in DRC">
     <meta name="twitter:description" content="Leading gold mining operations in the DRC with ethical practices and sustainable development.">
-    <meta name="twitter:image" content="https://www.hubrisminerals.com/assets/images/hubris-minerals-hero.jpg">
+    <meta name="twitter:image" content="https://jusroltd.github.io/hubris-minerals-static/assets/images/hubris-minerals-hero.jpg">
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -41,7 +41,7 @@
       "@type": "Corporation",
       "name": "Hubris Minerals",
       "url": "https://www.hubrisminerals.com/",
-      "logo": "https://www.hubrisminerals.com/assets/images/hubris-minerals-logo.svg",
+      "logo": "https://jusroltd.github.io/hubris-minerals-static/assets/images/hubris-minerals-logo.png",
       "description": "Premier gold mining company operating in the Democratic Republic of Congo, specializing in ethical gold extraction and sustainable mining practices.",
       "foundingDate": "2015",
       "industry": "Mining",
@@ -66,7 +66,7 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
 
     <!-- Fonts -->
@@ -80,13 +80,89 @@
     <!-- Preload Critical Resources -->
     <link rel="preload" href="assets/css/styles.css" as="style">
     <link rel="preload" href="assets/js/main.js" as="script">
+    
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/hubris-minerals-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .service-item-with-image {
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            color: white;
+            position: relative;
+        }
+        
+        .service-item-with-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: inherit;
+        }
+        
+        .service-item-with-image .card-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .carousel-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+        
+        .why-choose-card {
+            background-size: cover;
+            background-position: center;
+            min-height: 250px;
+            color: white;
+            position: relative;
+        }
+        
+        .why-choose-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: inherit;
+        }
+        
+        .why-choose-card .card-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header role="banner">
         <div class="header-container">
             <div class="logo" role="img" aria-label="Hubris Minerals Logo">
-                <strong>HUBRIS</strong> MINERALS
+                <img src="assets/images/hubris-minerals-logo.png" alt="Hubris Minerals Company Logo" />
             </div>
             <nav role="navigation" aria-label="Main navigation">
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
@@ -128,31 +204,37 @@
                 </header>
                 
                 <div class="services-grid">
-                    <article class="card service-item">
-                        <div class="card-icon">
-                            ⛏️
+                    <article class="card service-item-with-image" style="background-image: url('assets/images/mining-equipment.jpg');">
+                        <div class="card-content">
+                            <div class="card-icon">
+                                ⛏️
+                            </div>
+                            <h3>Gold Extraction</h3>
+                            <p>State-of-the-art extraction processes utilizing environmentally responsible methods to maximize yield while minimizing environmental impact.</p>
+                            <a href="services.html#extraction" class="btn btn-secondary">Learn More</a>
                         </div>
-                        <h3>Gold Extraction</h3>
-                        <p>State-of-the-art extraction processes utilizing environmentally responsible methods to maximize yield while minimizing environmental impact.</p>
-                        <a href="services.html#extraction" class="btn btn-secondary">Learn More</a>
                     </article>
                     
-                    <article class="card service-item">
-                        <div class="card-icon">
-                            🏭
+                    <article class="card service-item-with-image" style="background-image: url('assets/images/processing-facility.jpg');">
+                        <div class="card-content">
+                            <div class="card-icon">
+                                🏭
+                            </div>
+                            <h3>Processing & Refining</h3>
+                            <p>Advanced processing facilities equipped with modern technology to ensure the highest purity standards for all gold products.</p>
+                            <a href="services.html#processing" class="btn btn-secondary">Learn More</a>
                         </div>
-                        <h3>Processing & Refining</h3>
-                        <p>Advanced processing facilities equipped with modern technology to ensure the highest purity standards for all gold products.</p>
-                        <a href="services.html#processing" class="btn btn-secondary">Learn More</a>
                     </article>
                     
-                    <article class="card service-item">
-                        <div class="card-icon">
-                            🚛
+                    <article class="card service-item-with-image" style="background-image: url('assets/images/advanced-technology.jpg');">
+                        <div class="card-content">
+                            <div class="card-icon">
+                                🚛
+                            </div>
+                            <h3>Logistics & Distribution</h3>
+                            <p>Comprehensive supply chain management ensuring secure and efficient transportation of gold products to global markets.</p>
+                            <a href="services.html#logistics" class="btn btn-secondary">Learn More</a>
                         </div>
-                        <h3>Logistics & Distribution</h3>
-                        <p>Comprehensive supply chain management ensuring secure and efficient transportation of gold products to global markets.</p>
-                        <a href="services.html#logistics" class="btn btn-secondary">Learn More</a>
                     </article>
                 </div>
             </div>
@@ -198,21 +280,21 @@
                 <div class="minerals-carousel" data-autoplay="true">
                     <div class="carousel-container">
                         <div class="carousel-slide">
-                            <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%); border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: #111827; font-size: 2rem; font-weight: bold;">Gold Nuggets</div>
+                            <img src="assets/images/gold-nuggets.jpg" alt="Natural Gold Nuggets - Raw gold specimens from Hubris Minerals mining operations" />
                             <div class="carousel-content">
                                 <h3>Natural Gold Nuggets</h3>
                                 <p>Pure, unrefined gold nuggets directly from our mining operations, ranging from small specimens to substantial chunks perfect for collectors and investors.</p>
                             </div>
                         </div>
                         <div class="carousel-slide">
-                            <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #B8860B 0%, #DAA520 100%); border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: #FFF; font-size: 2rem; font-weight: bold;">Gold Bars</div>
+                            <img src="assets/images/gold-bars.jpg" alt="Refined Gold Bars - Investment grade gold bars with 99.9% purity from Hubris Minerals" />
                             <div class="carousel-content">
                                 <h3>Refined Gold Bars</h3>
                                 <p>Investment-grade gold bars with 99.9% purity, certified by international standards and ideal for institutional and private investors.</p>
                             </div>
                         </div>
                         <div class="carousel-slide">
-                            <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #CD7F32 0%, #D2691E 100%); border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: #FFF; font-size: 2rem; font-weight: bold;">Gold Dust</div>
+                            <img src="assets/images/gold-dust.jpg" alt="Gold Dust and Powder - Fine gold dust for industrial and commercial applications" />
                             <div class="carousel-content">
                                 <h3>Gold Dust & Powder</h3>
                                 <p>Fine gold dust and powder for industrial applications, jewelry manufacturing, and specialized commercial uses requiring precise gold content.</p>
@@ -238,36 +320,44 @@
                 </header>
                 
                 <div class="grid grid-2">
-                    <article class="card">
-                        <div class="card-icon">
-                            🌱
+                    <article class="card why-choose-card" style="background-image: url('assets/images/sustainable-practices.jpg');">
+                        <div class="card-content">
+                            <div class="card-icon">
+                                🌱
+                            </div>
+                            <h3>Sustainable Practices</h3>
+                            <p>Environmental stewardship is at the core of our operations. We employ eco-friendly extraction methods and actively participate in land rehabilitation programs.</p>
                         </div>
-                        <h3>Sustainable Practices</h3>
-                        <p>Environmental stewardship is at the core of our operations. We employ eco-friendly extraction methods and actively participate in land rehabilitation programs.</p>
                     </article>
                     
-                    <article class="card">
-                        <div class="card-icon">
-                            🛡️
+                    <article class="card why-choose-card" style="background-image: url('assets/images/safety-excellence.jpg');">
+                        <div class="card-content">
+                            <div class="card-icon">
+                                🛡️
+                            </div>
+                            <h3>Safety Excellence</h3>
+                            <p>Uncompromising commitment to worker safety with zero-tolerance policies, comprehensive training programs, and state-of-the-art safety equipment.</p>
                         </div>
-                        <h3>Safety Excellence</h3>
-                        <p>Uncompromising commitment to worker safety with zero-tolerance policies, comprehensive training programs, and state-of-the-art safety equipment.</p>
                     </article>
                     
-                    <article class="card">
-                        <div class="card-icon">
-                            ⚡
+                    <article class="card why-choose-card" style="background-image: url('assets/images/advanced-technology.jpg');">
+                        <div class="card-content">
+                            <div class="card-icon">
+                                ⚡
+                            </div>
+                            <h3>Advanced Technology</h3>
+                            <p>Cutting-edge mining equipment and processing technology ensure maximum efficiency, precision, and quality in every aspect of our operations.</p>
                         </div>
-                        <h3>Advanced Technology</h3>
-                        <p>Cutting-edge mining equipment and processing technology ensure maximum efficiency, precision, and quality in every aspect of our operations.</p>
                     </article>
                     
-                    <article class="card">
-                        <div class="card-icon">
-                            🤝
+                    <article class="card why-choose-card" style="background-image: url('assets/images/community-partnership.jpg');">
+                        <div class="card-content">
+                            <div class="card-icon">
+                                🤝
+                            </div>
+                            <h3>Community Partnership</h3>
+                            <p>Strong partnerships with local communities, providing employment opportunities and contributing to regional economic development.</p>
                         </div>
-                        <h3>Community Partnership</h3>
-                        <p>Strong partnerships with local communities, providing employment opportunities and contributing to regional economic development.</p>
                     </article>
                 </div>
             </div>
